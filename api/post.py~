@@ -46,8 +46,8 @@ def details():
     try:
         choose_required(data=content, required=required_data)
         post = posts.details(content["post"], related=related)
-        #if (post['isDeleted']):
-        #    return json.dumps({"code": 1, "response": "post not found"})
+        if (post['isDeleted']):
+            return json.dumps({"code": 1, "response": "post not found"})
     except Exception as e:
         return json.dumps({"code": 1, "response": (e.message)})
     return json.dumps({"code": 0, "response": post})

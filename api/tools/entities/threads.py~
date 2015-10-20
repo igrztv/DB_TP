@@ -56,7 +56,7 @@ def save_thread(forum, title, isClosed, user, date, message, slug, optional):
 
 def details(id, related):
     thread = DBconnect.select_query(
-        '''select date, forum, id, isClosed, isDeleted, message, slug, title, user, dislikes, likes, points, IFNULL(posts.posts, 0) FROM thread LEFT JOIN (SELECT thread, COUNT(*) as posts 
+        '''select date, forum, id, isClosed, isDeleted, message, slug, title, user, dislikes, likes, points, posts.posts FROM thread INNER JOIN (SELECT thread, COUNT(*) as posts 
                                    FROM post
                                    WHERE post.isDeleted = FALSE
                                    GROUP BY thread) posts ON posts.thread = thread.id

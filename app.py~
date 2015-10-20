@@ -32,8 +32,8 @@ def clear():
 
 @app.route('/db/api/status/', methods=['GET'])
 def status():
-    status = status_db()
-    return json.dumps({"code": 0, "response": status})
+    status_db()
+    return json.dumps({"code": 0, "response": "OK"})
 
 if __name__ == '__main__':
     app.run(port=5000)

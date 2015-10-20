@@ -44,11 +44,11 @@ def details():
     try:
         choose_required(data=content, required=required_data)
         thread = threads.details(id=content["thread"], related=related)
-        #print('thread is deleted')
-        #print(thread['isDeleted'])
-        #if thread['isDeleted'] == True:
-        #    thread['posts'] = 0
-        #    print(thread['posts'])
+        print('thread is deleted')
+        print(thread['isDeleted'])
+        if thread['isDeleted'] == True:
+            thread['posts'] = 0
+            print(thread['posts'])
     except Exception as e:
         return json.dumps({"code": 1, "response": (e.message)})
     return json.dumps({"code": 0, "response": thread})

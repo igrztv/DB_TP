@@ -154,7 +154,7 @@ def posts_list(entity, params, identifier, related=[]):
         if "thread" in related:
             tbeg = int(round(time.time() * 1000))
             #pf["thread"] = thread_list.get(int(pf["thread"]))
-            pf["thread"] = threads.details(pf["thread"], related=[])
+            pf["thread"] = thread.details(pf["thread"], related=[])
             thread_time += (int(round(time.time() * 1000)) - tbeg)
         post_list.append(pf)
     end = int(round(time.time() * 1000))
