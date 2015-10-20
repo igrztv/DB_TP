@@ -1,0 +1,20 @@
+{
+  "name": "forum-api",
+  "version": "1.0.0",
+  "description": "tp db proj",
+  "main": "app.py",
+  "scripts": {
+    "test": "python ../forum-api-test/tests/func_test.py -lv",
+    "perf": "python ../forum-api-test/tests/perf_test.py -l --address=127.0.0.1:5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DmitryDorofeev/forum-api.git"
+  },
+  "author": "Dmitry Dorofeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryDorofeev/forum-api/issues"
+  },
+  "homepage": "https://github.com/DmitryDorofeev/forum-api"
+}
