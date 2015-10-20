@@ -1,4 +1,4 @@
-__author__ = 'dmitry'
+
 
 from flask import Flask, request
 from api.tools.entities.clear import clear as clear_db

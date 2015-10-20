@@ -1,4 +1,4 @@
-__author__ = 'dmitry'
+
 
 import MySQLdb as db
 

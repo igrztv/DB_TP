@@ -1,4 +1,4 @@
-__author__ = 'dmitry'
+
 import urlparse
 
 def related_exists(request):

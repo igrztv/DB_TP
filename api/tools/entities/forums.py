@@ -1,4 +1,4 @@
-__author__ = 'dmitry'
+
 
 from api.tools import DBconnect
 from api.tools.entities import users
