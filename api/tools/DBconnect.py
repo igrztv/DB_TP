@@ -11,7 +11,7 @@ class DBConnection:
     # Main connector method
     @staticmethod
     def connect():
-        return db.connect(host="127.0.0.1", user="root", passwd="JPMorgan", db="forumdb")
+        return db.connect(host="127.0.0.1", user="root", passwd="Qwerty123!", db="forumdb")
 
 
 # Execute update query
